@@ -1,0 +1,64 @@
+.el-1{
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.el-2{
+    background-color: rgb(134, 0, 141);
+    height: 200px;
+}
+
+.el-3{
+    background-color: rgb(100, 140, 250);
+    height: 200px;
+    /* posizione fissa rispetto alla viewport alla finestra, 
+    non alla pagina - contenuto - dunque scrolla su e giù 
+    in posizione */
+    position: fixed;
+    left: 20px;
+    top: 50px;
+}
+
+.el-4{
+    background-color: rgb(226, 43, 168);
+    height: 200px;
+    /* position: relative; sposti la posizione dell'oggetto relativamente alla sua posizione originale
+    left: 20px;
+    top: 50px; */
+}
+
+.el-5{
+    background-color: rgb(107, 223, 255);
+    height: 200px;
+}
+
+.el-6{
+    background-color: rgb(43, 119, 226);
+    height: 400px;
+    position: relative;
+}
+
+.el-7{
+    background-color: rgb(5, 54, 190);
+    /* se absolute perde la dimensione relativa al div 
+    (che è display block) dunque non ha istruzioni 
+    di grandezza o di posizione */
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: 20px;
+}
+
+.el-8{
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+    /* il child diventa relative al parent 
+    se quest'ultimo è relative */
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+/* absolute si muove rispetto alla pagina
+fixed si muove rispetto alla viewport */

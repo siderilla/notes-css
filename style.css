@@ -1,0 +1,96 @@
+
+/* tag senza punto */
+body{
+    background-color: rgb(255, 222, 178) !important;
+    font-family: "Quicksand", serif;
+}
+
+/* class è preceduto dal . */
+/* class ha precedenza su tag */
+.title{
+    color: brown;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+h2{
+    color: black;
+}
+
+.super-class, .seconda-class{
+    color: blue;
+}
+
+/* il secondo tag ha priorità sul primo tag a meno 
+che il primo non abbia !important */
+body{
+    background-color: chocolate;
+}
+
+/* id contrassegnato da cancelletto */
+#lorem-p{
+    font-family: "Quicksand";
+    width: 300px;
+    background-color: beige;
+    /* height: 60px; (testo overflow!) */
+    /* overflow: hidden; (si nasconde) */
+    height: 70px;
+    overflow: auto;
+}
+
+/* selezionare tag padre + tag figlio */
+header h1{
+    background-color: blueviolet;
+}
+
+/* selezionare due tag diversi separati da virgola */
+header, footer{
+    border-style: dotted;
+}
+
+footer{
+    font-size: xx-small;
+    /* padding-left: 18px;
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-bottom: 150px; */
+    padding: 18px 40px 100px 150px;
+    /* padding: 100px 200px; (top/bottom) (left/right) */
+    margin: 10px;
+    max-width: 800px;
+}
+
+.mother{
+    background-color: brown;
+    padding: 8px;
+    width: 800px;
+    border-radius: 15px;
+}
+
+.son{
+    background-color: coral;
+    width: 50vw;
+    /* (vw è la metà della pagina view width) */
+}
+/* padding è il margine del contenuto
+margin è il margine del contenitore */
+
+header{
+    background-image: url(./assets/header_space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* contain adatta alle dimensioni del contenitore
+    cover prende la massima dimensione non taglia immagine */
+    height: 500px;
+}
+
+.link1{
+    background-color: rgb(0, 4, 255);
+    width: 300px;
+    display: block;
+}
+
+/* gli elementi inline (come i link) rimangono in line 
+anche se si setta per un singolo link la sua larghezza, 
+dunque si usa display block */

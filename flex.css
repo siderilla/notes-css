@@ -1,0 +1,52 @@
+*{
+    border: solid rgb(63, 79, 255) 1px;
+    /* box sizing fondamentale per far si che il padding
+    interessi sia top e bottom che left e right */
+    box-sizing: border-box;
+}
+
+/* p{
+    display: inline-block;
+    width: 49.5%;
+    padding: 100px;
+} */
+ /* senza box-sizing il padding interessa solo top e bottom */
+
+.mother{
+    display: flex;
+    height: 600px;
+    padding: 4px;
+    justify-content: space-evenly;
+    /* gap tra elementi figli */
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.son{
+    height: 292px;
+    /* con la wrap per mandare a capo, la width ha priorità */
+    /* width: 300px; */
+    min-width: 290px;
+    /* se nel figlio hai un order, la mamma lo usa */
+    /* se due figli hanno lo stesso order, vale l'ordine in cui è scritto in html */
+    order: 1;
+}
+
+.pink {
+    background-color: pink;
+    order: 7;
+    /* flex-grow: 1;
+    shrink rispetto al contenuto quanto si può stringere
+    flex-shrink: 0;
+    la scatola rispetta la grandezza in proporzione senza considerare il contenuto
+    flex-basis: 0; */
+}
+
+.toe {
+    background-color: blueviolet;
+    order: 6;
+    /* flex-grow: 5;
+    flex-shrink: 0;
+    flex-basis: 0; */
+}
